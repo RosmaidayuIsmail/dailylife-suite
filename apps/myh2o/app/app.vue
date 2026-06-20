@@ -3,6 +3,8 @@
     <div class="w-full max-w-md bg-[#F2F4F1] h-full flex flex-col shadow-2xl relative overflow-hidden">
       <NuxtPage />
     </div>
+
+    <VitePwaManifest />
   </div>
 </template>
 

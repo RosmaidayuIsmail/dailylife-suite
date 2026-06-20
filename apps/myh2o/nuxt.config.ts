@@ -1,10 +1,44 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-  ssr: false, // Disables server-side rendering for mobile compatibility
+
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@vite-pwa/nuxt'
   ],
-  pageTransition: { name: 'swipe-up', mode: 'out-in' }
+
+  pwa: {
+    devOptions: {
+      enabled: true
+    },
+
+    registerType: 'autoUpdate',
+
+    manifest: {
+      name: 'MyH2O',
+      short_name: 'MyH2O',
+      description: 'Smart Hydration Tracker',
+
+      theme_color: '#0ea5e9',
+      background_color: '#ffffff',
+
+      display: 'standalone',
+      orientation: 'portrait',
+
+      start_url: '/',
+
+      icons: [
+        {
+          src: '/icons/icon-192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: '/icons/icon-512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        }
+      ]
+    }
+  }
 })
