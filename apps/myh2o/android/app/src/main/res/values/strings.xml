@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MyH2O</string>
+    <string name="title_activity_main">MyH2O</string>
+    <string name="package_name">com.idayu.hydration</string>
+    <string name="custom_url_scheme">com.idayu.hydration</string>
+</resources>

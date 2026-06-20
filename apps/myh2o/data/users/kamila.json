@@ -1,0 +1,19 @@
+{
+  "username": "kamila",
+  "password": "kamila",
+  "profile": {
+    "name": "Kamila Hannie",
+    "weight": 56,
+    "height": 165,
+    "activityLevel": "Moderate",
+    "dailyGoal": 2250
+  },
+  "water": {
+    "currentIntake": 0,
+    "waterLog": []
+  },
+  "reminders": {
+    "morning": false,
+    "afternoon": false
+  }
+}

@@ -1,0 +1,24 @@
+/* assets/css/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Page transition animation classes for 'swipe-up' */
+.swipe-up-enter-active, .swipe-up-leave-active {
+  transition: all 0.5s ease;
+}
+.swipe-up-enter-from {
+  opacity: 0;
+  transform: translateY(20px); /* Adjust distance as needed */
+}
+.swipe-up-leave-to {
+  opacity: 0;
+  transform: translateY(-20px); /* Adjust distance as needed */
+}
+
+/* Base styles/overrides - optional, ensures consistency */
+@layer base {
+  body {
+    @apply antialiased; /* Smoother fonts */
+  }
+}
